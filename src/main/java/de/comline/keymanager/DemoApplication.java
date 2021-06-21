@@ -24,7 +24,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	
-	@PostConstruct
+	//@PostConstruct
 	public void addMissing() {
 		FilterChainProxy filterChainProxy = (FilterChainProxy) springSecurityFilterChain;
 	    List<SecurityFilterChain> list = filterChainProxy.getFilterChains();
